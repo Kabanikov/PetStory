@@ -1,0 +1,184 @@
+body {
+    font-family: "Roboto", sans-serif;
+  }
+  .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .header__top {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    z-index: 999;
+  }
+  .header__top-inner {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__top-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 63px;
+  }
+  .header__menu-item:not(:last-child) {
+    margin-right: 58px;
+  }
+  .header__menu-link {
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .header__menu-item.active .header__menu-link {
+    color: #fe9013;
+    margin-left: 63px;
+  }
+  a{
+    text-decoration: none;
+  }
+  .header__bottom {
+    background-image: url("./assets/img/Giant\ Panda.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+  }
+  .header__bottom-inner {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header__inner-content {
+    margin-bottom: 100px;
+    width: 574px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header__inner-text {
+    width: 465px;
+    height: 465px;
+    border-radius: 50%;
+    background: linear-gradient(114deg, #f9804b 1.49%, #fe9013 101.44%);
+    color: #fff;
+    text-align: center;
+    font-size: 106.496px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 75%; /* 79.872px */
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  .header__inner-text span {
+    color: #ffee2e;
+    font-size: 106.496px;
+    font-style: normal;
+  }
+  .header__inner-text p {
+    position: absolute;
+    top: 74px;
+    left: 74px;
+  }
+  .header__button {
+    align-self: center;
+    color: #fff;
+    display: flex;
+    width: 298px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: linear-gradient(114deg, #f9804b 1.49%, #fe9013 101.44%);
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    text-transform: uppercase;
+  }
+  
+.samurai__container{
+    display: flex;
+}
+  
+.samurai__container .man__picture{
+    width: 609px;
+    height: 403px;
+    flex-shrink: 0;
+    margin-left: 5px;
+    background-image: url(./assets/img/bamboo-cap.png);
+    background-size: cover;
+    margin-top: 140px;
+    margin-bottom: 180px;
+
+}
+.samurai__container .backstage__title{
+    margin-left: 87px;
+    margin-top: 140px;
+    width: 465px;
+    color: #333B41;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+}
+.samurai__container .backstage__title .subtitle{
+    width: 465px;
+    color: #333B41;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+}
+.samurai__container .howitworks__title{
+    margin-left: 87px;
+    margin-top: 54px;
+    color: #333B41;
+    width: 217px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 28.8px */
+}
+.samurai__container .howitworks__title .subtitle{
+    width: 465px;
+    color: #333B41;
+    margin-top: 34px;
+    height: 105px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+}
+.samurai__container .flower__picture{
+    width: 293px;
+    height: 605px;
+    margin-top: 12px;
+    margin-left: 1181px;
+    flex-shrink: 0;
+    position: absolute;
+    background-image: url(./assets/img/flower_foto1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
