@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide-core.min.css" integrity="sha512-cSogJ0h5p3lhb//GYQRKsQAiwRku2tKOw/Rgvba47vg0+iOFrQ94iQbmAvRPF5+qkF8+gT7XBct233jFg1cBaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
     <link rel="stylesheet" href="./style.css">
     <title>Online zoo</title>
 </head>
@@ -50,16 +55,18 @@
         </div>
     </header>
     <main class="main">
-        <div class="flower__picture"></div>
-        <div class="container">
-            <div class="samurai__container">
-                <div class="man__picture"></div>
-                <div class="text__container">
-                    <div class="backstage__title">The Backstage of the Wilderness World.<div class="subtitle">The site was founded on the basis of a volunteer movement to protect and care for animals.</div></div>
-                    <div class="howitworks__title">How it works<div class="subtitle">The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</div></div> 
+        <section class="about">
+            <div class="container">
+                <div class="samurai__container">
+                    <div class="man__picture"></div>
+                    <div class="text__container">
+                        <div class="backstage__title">The Backstage of the Wilderness World.<div class="subtitle">The site was founded on the basis of a volunteer movement to protect and care for animals.</div></div>
+                        <div class="howitworks__title">How it works<div class="subtitle">The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</div></div> 
+                    </div>
                 </div>
             </div>
-        </div>
+            
+        </section>
     <div class="gradient">
         <div class="container">
             <div class="gradient__container">
@@ -92,10 +99,49 @@
             </div>
         </div>
     </div>
-
+    
     </main>
     <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <a href="#" class="logo">
+                    <img src="./assets/img/logo.PNG" alt="logo">
+                </a>
+                <div class="footer-news-subscribe">
+                    <div class="title">Subscribe to our news</div>
+                    <div class="form"><input type="email" value="Enter your email"><a href="#" class="submit__button">Submit</a></div>
 
+                </div>
+              
+            </div>
+        </div>
     </footer>
     
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
+<script type="module">
+    let splideAbout = new Splide( '.splide', {
+        type: 'loop',
+        perMove: 1,
+        perPage: 3,
+        pagination: false,
+        arrows: false,
+        grid: {
+            rows: 2,
+            cols: 1,
+            gap : {
+                row: '1rem',
+                col: '1.5rem',
+            },
+        },
+    } ).mount(window.splide.Extensions);
+    document.querySelector('.about__button-cards-prev').addEventListener('click', e=>{
+        splideAbout.go('-1');
+    })
+    document.querySelector('.about__button-cards-next').addEventListener('click', e=>{
+        splideAbout.go('+1');
+    })
+</script>
+</html>
