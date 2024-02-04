@@ -474,6 +474,21 @@ margin-bottom: 14px;
   width: 26px;
   height: 26px;
   border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.footer .container .footer-inner .social-network_container .facebook__button .icon {
+  background-image: url(./assets/img/facebook-icon.png);
+}
+.footer .container .footer-inner .social-network_container .twitter__button .icon {
+  background-image: url(./assets/img/twitter-icon.png);
+}
+.footer .container .footer-inner .social-network_container .instagram__button .icon {
+  background-image: url(./assets/img/inst-icon.png);
+}
+.footer .container .footer-inner .social-network_container .youtube__button .icon {
+  background-image: url(./assets/img/youtube-icon.png);
 }
 .footer .container .footer-inner .social-network_container .title{
   color: rgb(255, 255, 255);
