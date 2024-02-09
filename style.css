@@ -507,6 +507,13 @@ margin-bottom: 14px;
   bottom: 1px;
 }
 
+.footer .container .footer-inner .social-network_container .header__menu-list{
+  display: flex;
+  flex-direction: row;
+  margin-left: 298px;
+  padding-bottom: 50px;
+}
+
 .about{
   background: white;
 }
