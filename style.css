@@ -696,7 +696,7 @@ img {
   color: black;
   /* testimonials */
   min-width: 238px;
-  height: 361px;
+  height: 400px;
   /* pink_gradient */
   border-radius: 20px;
 
@@ -714,9 +714,20 @@ img {
   flex: 1;
   max-height: 575px;
   overflow-x: scroll;
-  scrollbar-color: rgb(254, 144, 19) transparent;
-  scrollbar-arrow-color: transparent;
+
 }
+.testimonials::-webkit-scrollbar {
+  width: 100px; 
+}
+
+.testimonials::-webkit-scrollbar-thumb {
+  background-color: rgb(254, 144, 19); 
+  border-radius: 10px; 
+  
+}
+
+
+
 .testimonial__date-and-location{
   color: rgb(189, 189, 189);
   font-size: 15px;
