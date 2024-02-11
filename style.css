@@ -718,6 +718,9 @@ img {
 }
 .testimonials::-webkit-scrollbar {
   width: 100px; 
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: rgb(245, 247, 246);
 }
 
 .testimonials::-webkit-scrollbar-thumb {
