@@ -787,6 +787,11 @@
 }
 .header__top-designed
 {
-  visibility: hidden;
+display: none;
 }
+.menu-button{
+    left: 0;
+}
+
+
 
