@@ -775,3 +775,65 @@
       background-size: cover;
     }
   }
+  .header__top-designed
+{
+display: flex;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 640px) {
+
+.man__picture{
+  display: none;
+}
+
+
+.header__top-designed
+{
+display: none;
+}
+.menu-button{
+  left: 0;
+}
+.header__bottom-inner .header__inner-text
+{
+  height: 237px;
+  width: 237px;
+  font-size: 54px;
+  margin-left: 280px;
+  margin-top: 10px;
+}
+.header__bottom-inner span{
+  font-size: 54px;
+}
+.header__bottom-inner p{
+  margin-top: -40px;
+  margin-left: -40px;
+}
+.header__button{
+  margin-left: -300px;
+  margin-top: -50px;
+  margin-bottom: -20px;
+}
+.text__container .backstage__title{
+  margin-top: 60px;
+}
+.text__container .howitworks__title{
+  margin-top: 30px;
+}
+.howit__container .subtitle{
+  margin-bottom: 80px;
+}
+.samurai__container .howitworks__title .subtitle{
+  margin-bottom: 80px;
+}
+
+
+}
