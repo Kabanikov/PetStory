@@ -458,7 +458,8 @@
     letter-spacing: 0%;
     text-align: left;
     margin-top: 216px;
-    }
+    
+}
     
     .footer .container .footer-inner .donate__button {
       width: 298px;
@@ -782,5 +783,10 @@
   }
   .header__menu-toggle {
     display: none; /* Скрываем бургер-кнопку по умолчанию */
+    
+}
+.header__top-designed
+{
+  visibility: hidden;
 }
 
