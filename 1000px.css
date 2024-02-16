@@ -775,3 +775,7 @@
       background-size: cover;
     }
   }
+  .header__top-designed
+{
+display: flex;
+}
