@@ -831,7 +831,9 @@ display: none;
 .howit__container .subtitle{
   margin-bottom: 80px;
 }
-
+.samurai__container .howitworks__title .subtitle{
+  margin-bottom: 80px;
+}
 
 
 }
