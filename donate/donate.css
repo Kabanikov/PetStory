@@ -257,11 +257,48 @@ margin-top: 9px;
   border-radius: 50%;
 
 }
-datalist{
-  color: #333B41;
+datalist {
+  display: flex;
+
+  width: 200px;
 }
 
+option {
+  padding: 0;
+}
 
+input[type="range"] {
+  width: 200px;
+  margin: 0;
+}
+
+#donate-range::-webkit-slider-thumb::before {
+  content: attr(label);
+  position: absolute;
+  bottom: -20px; /* регулируйте положение подписи */
+  left: 50%; /* или другая позиция по вашему усмотрению */
+  transform: translateX(-50%);
+  white-space: nowrap;
+} 
+
+.another-amount 
+{
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 268px;
+  height: 54px;
+  box-sizing: border-box;
+  border: 1px solid rgb(146, 150, 153);
+  border-radius: 2px;
+
+}
+.another-amount #enter{
+  margin-top: 16px;
+  width: 150px;
+  height: 22px;
+  background: transparent;
+  border: none;
+}
 
 
 
