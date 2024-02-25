@@ -156,7 +156,7 @@ body {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.52);
     backdrop-filter: blur(2px);
-    height: 964px;
+    height: 844px;
     padding-top: 20px;
     margin-top: 30px;
   }
@@ -257,15 +257,129 @@ margin-top: 9px;
   border-radius: 50%;
 
 }
-datalist{
-  color: #333B41;
+datalist {
+  display: flex;
+
+  width: 200px;
 }
 
+option {
+  padding: 0;
+}
 
+input[type="range"] {
+  width: 200px;
+  margin: 0;
+}
 
+#donate-range::-webkit-slider-thumb::before {
+  content: attr(label);
+  position: absolute;
+  bottom: -20px; /* регулируйте положение подписи */
+  left: 50%; /* или другая позиция по вашему усмотрению */
+  transform: translateX(-50%);
+  white-space: nowrap;
+} 
 
+.another-amount 
+{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 268px;
+  height: 54px;
+  box-sizing: border-box;
+  border: 1px solid rgb(146, 150, 153);
+  border-radius: 2px;
 
+}
+.another-amount #enter{
+  margin-top: 16px;
+  margin-left: 10px;
+  width: 150px;
+  height: 22px;
+  background: transparent;
+  color: rgb(146, 150, 153);
+  border: none;
+}
+.another-amount .money-picture{
+  background-image: url(./assets/img/baks.png);
+  width: 10px;
+  height: 20px;
+  margin-top: 17px;
+  margin-left: 80px;
+}
+.feed__button {
+  margin: 0 auto;
+  margin-top: 30px;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  width: 298px;
+  height: 54px;
+  border-radius: 25px;
+  background: linear-gradient(114deg, #f9804b 1.49%, #fe9013 101.44%);
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; 
+  text-transform: uppercase;
+  }
 
+  .periodicity-selector{
+    width: 268px;
+    margin: 0 auto;
+    margin-top: 27px;
+
+  }
+
+.amount__container .subtitle_bottom{
+  color: rgb(51, 59, 65);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.periodicity-selector input
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #FE9013;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+.periodicity-selector label{
+color: rgb(51, 59, 65);
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 140%;
+letter-spacing: 0%;
+text-align: left;
+}
+#donateChoice2{
+  margin-left: 50px;
+}
+#donateChoice1{
+  margin-left: 28px;
+}
 
 
 
