@@ -283,6 +283,7 @@ input[type="range"] {
 
 .another-amount 
 {
+  display: flex;
   margin: 0 auto;
   margin-top: 50px;
   width: 268px;
@@ -294,10 +295,19 @@ input[type="range"] {
 }
 .another-amount #enter{
   margin-top: 16px;
+  margin-left: 10px;
   width: 150px;
   height: 22px;
   background: transparent;
+  color: rgb(146, 150, 153);
   border: none;
+}
+.another-amount .money-picture{
+  background-image: url(./assets/img/baks.png);
+  width: 10px;
+  height: 20px;
+  margin-top: 17px;
+  margin-left: 80px;
 }
 
 
