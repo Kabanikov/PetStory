@@ -156,7 +156,7 @@ body {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.52);
     backdrop-filter: blur(2px);
-    height: 964px;
+    height: 844px;
     padding-top: 20px;
     margin-top: 30px;
   }
@@ -310,15 +310,15 @@ input[type="range"] {
   margin-left: 80px;
 }
 .feed__button {
-  align-self: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  justify-content: center;
   color: #fff;
+  align-items: center;
   display: flex;
   width: 298px;
   height: 54px;
-  justify-content: center;
-  align-items: center;
   border-radius: 25px;
-  margin-top: 86px;
   background: linear-gradient(114deg, #f9804b 1.49%, #fe9013 101.44%);
   color: #fff;
   font-size: 16px;
@@ -326,7 +326,6 @@ input[type="range"] {
   font-weight: 500;
   line-height: 140%; 
   text-transform: uppercase;
-  margin-bottom: 50px;
   }
 
   .periodicity-selector{
@@ -335,6 +334,17 @@ input[type="range"] {
     margin-top: 27px;
 
   }
+
+.amount__container .subtitle_bottom{
+  color: rgb(51, 59, 65);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 30px;
+}
 
 .periodicity-selector input
 {
