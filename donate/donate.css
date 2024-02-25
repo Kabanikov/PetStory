@@ -329,9 +329,47 @@ input[type="range"] {
   margin-bottom: 50px;
   }
 
+  .periodicity-selector{
+    width: 268px;
+    margin: 0 auto;
+    margin-top: 27px;
 
+  }
 
+.periodicity-selector input
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #FE9013;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+.periodicity-selector label{
+color: rgb(51, 59, 65);
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 140%;
+letter-spacing: 0%;
+text-align: left;
+}
+#donateChoice2{
+  margin-left: 50px;
+}
+#donateChoice1{
+  margin-left: 28px;
+}
 
 
 
