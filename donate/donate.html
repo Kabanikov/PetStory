@@ -62,11 +62,24 @@
                 <div class="amount__container">
                     <div class="roller-title">Amount</div>
                     <div class="roller__container">
-                        <input type="range" min="25" max="5000" step="any" id="donate-range" name="temp" list="markers" /> 
+                        <input type="range" id="donate-range" name="temp" min="25" max="5000" value="25" step="300" list="values" />
                     </div>
                     <div class="another-amount">
-                        <input type="number" value="Another amount">
-                    </div>                   
+                        <input id="enter" type="email" value="Another amount">
+                        <div class="money-picture"></div>
+                    </div>
+                    <div class="periodicity-selector">
+                        <input type="radio" id="donateChoice1" name="contact" value="monthly" />
+                        <label for="donateChoice1">Monthly</label>
+                  
+                        <input type="radio" id="donateChoice2" name="contact" value="once" />
+                        <label for="donateChoice2">Once</label>
+                  
+                    </div>
+                    <a href="#" class="feed__button">
+                        Feed a friend now
+                    </a>   
+                    <div class="subtitle_bottom">Share with your friends on social networks </div>
                 </div>
 
             </div>
