@@ -244,7 +244,8 @@ margin-top: 9px;
   width: 100%;
   height: 27px;
   border-radius: 2px;
-
+padding-left: 26px;
+padding-right: 30px;
   background: rgb(64, 73, 80);
 }
 
@@ -275,10 +276,11 @@ input[type="range"] {
 #donate-range::-webkit-slider-thumb::before {
   content: attr(label);
   position: absolute;
-  bottom: -20px; /* регулируйте положение подписи */
-  left: 50%; /* или другая позиция по вашему усмотрению */
+  bottom: -20px; 
+  left: 50%; 
   transform: translateX(-50%);
   white-space: nowrap;
+  text-decoration: line-through;
 } 
 
 .another-amount 
@@ -343,6 +345,7 @@ height: 36px;
 .fifth-discription{
 width: 57px;
 height: 36px;
+margin-left: 44px;
 }
 
 
