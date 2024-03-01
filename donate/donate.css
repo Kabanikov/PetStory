@@ -322,6 +322,30 @@ input[type="range"] {
   text-align: left;
   text-transform: uppercase;
 }
+.first-discription{
+margin-left: 92px;
+}
+.second-discription ,.third-discription ,.fourth-discription{
+margin-left: 58px;
+width: 78px;
+height: 36px;
+}
+.fifth-discription ,.sixth-discription ,.seventh-discription{
+  margin-left: 73px;
+  width: 57px;
+  height: 36px;
+}
+.eighth-discription{
+  width: 71px;
+height: 36px;
+  margin-left: 70px
+}
+.fifth-discription{
+width: 57px;
+height: 36px;
+}
+
+
 .feed__button {
   margin: 0 auto;
   margin-top: 30px;
