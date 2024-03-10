@@ -724,16 +724,28 @@
   .about .splide__slide__row:first-child{
       margin-bottom: 94px !important;
   }
+  .about__card{
+      width: 294px !important;
+      height: 354px;
+      margin-left: 10px;
+  }
+  .about__card-image{
+      width: 290px;
+      height: 290px;
+  }
+  .about__cards{
+      position: relative;
+  }
   .about__button-cards{
-    position: absolute;
-    transform: translateX(-50%);
-}
-.about__button-cards-prev{
-    left: 45%;
-}
-.about__button-cards-next{
-    left: 55%;
-}
+      position: absolute;
+      transform: translateX(-50%);
+  }
+  .about__button-cards-prev{
+      left: 45%;
+  }
+  .about__button-cards-next{
+      left: 55%;
+  }
     
     }
 
