@@ -724,6 +724,16 @@
   .about .splide__slide__row:first-child{
       margin-bottom: 94px !important;
   }
+  .about__button-cards{
+    position: absolute;
+    transform: translateX(-50%);
+}
+.about__button-cards-prev{
+    left: 45%;
+}
+.about__button-cards-next{
+    left: 55%;
+}
     
     }
 
