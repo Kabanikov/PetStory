@@ -592,6 +592,73 @@ margin-top: 216px;
   margin-left: 298px;
   padding-bottom: 50px;
 }
+.pick_and_feed__progress_bar-label{
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+.pick_and_feed__progress_bar-points{
+  display: flex;
+  background: #72828E;
+  height: 2px;
+  width: 810px;
+  border: 12px #404950 solid;
+  border-radius: 3px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.pick_and_feed__progress_bar-point{
+  border: 10px solid transparent;
+  position: relative;
+}
+.pick_and_feed__progress_bar-point-inner{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(255, 238, 46);
+}
+.pick_and_feed__progress_bar-prices{
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+}
+.pick_and_feed__progress_bar-price{
+  color: rgb(51, 59, 65);
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 1px;
+  user-select: none;
+  transition: 0.5s;
+}
+.pick_and_feed__progress_bar-price-selected{
+  color: rgb(254, 144, 19);
+}
+.pick_and_feed__progress_bar-point-selected::after{
+  content: "";
+  width: 36px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 5px;
+  top: 5px;
+  border-radius: 50%;
+  border: 2px solid rgb(254, 144, 19);
+}
+.pick_and_feed__progress_bar-point-selected::before{
+  content: "";
+  width: 19px;
+  height: 19px;
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 5px;
+  top: 5px;
+  border-radius: 50%;
+  border: 2px solid rgb(254, 144, 19);
+}
 
 
   
