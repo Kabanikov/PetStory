@@ -229,7 +229,7 @@ margin-top: 9px;
   line-height: 140%;
   letter-spacing: 0%;
   text-align: left;
-  margin-left: 96px;
+  margin-left: 160px;
 }
 #donate-range {
   -webkit-appearance: none;
@@ -607,6 +607,8 @@ margin-top: 216px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 .pick_and_feed__progress_bar-point{
   border: 10px solid transparent;
@@ -622,13 +624,16 @@ margin-top: 216px;
   display: flex;
   width: 800px;
   justify-content: space-between;
+  margin-left: 140px;
+  
+
 }
 .pick_and_feed__progress_bar-price{
   color: rgb(51, 59, 65);
   font-size: 26px;
   font-weight: 500;
   text-transform: uppercase;
-  width: 1px;
+  width: 17px;
   user-select: none;
   transition: 0.5s;
 }
