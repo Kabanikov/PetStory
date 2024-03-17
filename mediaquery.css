@@ -76,17 +76,19 @@
         background: linear-gradient(114deg, #f9804b 1.49%, #fe9013 101.44%);
         color: #fff;
         text-align: center;
-        font-size: 106.496px;
+        font-size: 103px;
         font-style: normal;
         font-weight: 700;
         line-height: 75%; 
         text-transform: uppercase;
         position: relative;
         margin-bottom: 60px;
+        margin-top: -15px;
+        margin-left: -30px;
       }
       .header__inner-text span {
         color: #ffee2e;
-        font-size: 106.496px;
+        font-size: 96px;
         font-style: normal;
       }
       .header__inner-text p {
@@ -633,13 +635,9 @@
     .testimonial{
       padding: 15px;
       color: black;
-      /* testimonials */
       min-width: 293px;
       height: 400px;
-      /* pink_gradient */
       border-radius: 20px;
-    
-      /* gray_light */
       background: rgb(241, 243, 242);
     }
     .testimonal__header{
