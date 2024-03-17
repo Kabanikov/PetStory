@@ -1,7 +1,8 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1320px) {
     body {
         font-family: "Roboto", sans-serif;
       }
+
       .container {
         max-width: 1000px;
         margin: 0 auto;
@@ -75,17 +76,19 @@
         background: linear-gradient(114deg, #f9804b 1.49%, #fe9013 101.44%);
         color: #fff;
         text-align: center;
-        font-size: 106.496px;
+        font-size: 103px;
         font-style: normal;
         font-weight: 700;
         line-height: 75%; 
         text-transform: uppercase;
         position: relative;
         margin-bottom: 60px;
+        margin-top: -15px;
+        margin-left: -30px;
       }
       .header__inner-text span {
         color: #ffee2e;
-        font-size: 106.496px;
+        font-size: 96px;
         font-style: normal;
       }
       .header__inner-text p {
@@ -563,69 +566,7 @@
     .about__backstage-content-subtitle{
       margin-bottom: 34px;
     }
-    .about__cards{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 80px;
     
-    }
-    .container-cards{
-      display: flex;
-    }
-    .about__button-cards{
-      width: 62px;
-      height: 62px;
-      padding: 0;
-      background: none;
-      border: none;
-    }
-    .about__card{
-      width: 294px !important;
-      border-radius: 5px;
-      border: 2px solid #FA6F32;
-    }
-    .about__button-cards img{
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .about__button-cards-next img{
-      transform: scaleX(-100%);
-    }
-    .about__button-cards-prev{
-      margin-right: 20px;
-    }
-    .about__card-info{
-      margin: 8px 8px 14px 16px;
-      display: flex;
-    }
-    .about__card-text{
-      width: 294px;
-    }
-    .about__card-image{
-      border-radius: 3px;
-    }
-    .about__card-title{
-      color: #000;
-    
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 140%; /* 22.4px */
-      text-transform: uppercase;
-    
-    }
-    .about__card-subtitle{
-      color: #000;
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 120%; /* 18px */
-    }
-    .about__card-glyph img{
-      width: 40px;
-      height: 40px;
-    }
     .about__button{
       width: 298px;
       height: 54px;
@@ -694,13 +635,9 @@
     .testimonial{
       padding: 15px;
       color: black;
-      /* testimonials */
       min-width: 293px;
       height: 400px;
-      /* pink_gradient */
       border-radius: 20px;
-    
-      /* gray_light */
       background: rgb(241, 243, 242);
     }
     .testimonal__header{
@@ -774,11 +711,42 @@
       position: absolute;
       background-size: cover;
     }
+    .header__top-designed
+    {
+    display: flex;
+    }
+
+    .about .splide__slide__row{
+      height: 354px !important;
   }
-  .header__top-designed
-{
-display: flex;
-}
+  .about .splide__slide__row:first-child{
+      margin-bottom: 94px !important;
+  }
+  .about__card{
+      width: 294px !important;
+      height: 354px;
+      margin-left: 10px;
+  }
+  .about__card-image{
+      width: 290px;
+      height: 290px;
+  }
+  .about__cards{
+      position: relative;
+  }
+  .about__button-cards{
+      position: absolute;
+      transform: translateX(-50%);
+  }
+  .about__button-cards-prev{
+      left: 45%;
+  }
+  .about__button-cards-next{
+      left: 55%;
+  }
+    
+    }
+
 
 
 

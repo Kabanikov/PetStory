@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
    
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./1000px.css">
+    <link rel="stylesheet" href="./mediaquery.css">
 
     <title>Online zoo</title>
 </head>
@@ -363,8 +363,8 @@
                     <div class="footer-news-subscribe">
                         <div class="title">Subscribe to our news</div>
                         <div class="form">
-                            <input type="email" value="Enter your email">
-                            <a href="#" class="submit__button">Submit</a>
+                            <input type="email" id="emailInput" placeholder="Enter your email" required>
+                            <button type="button" class="submit__button" onclick="validateEmail()">Submit</button>
                         </div>
                     </div>
                     <div class="designedby">Designed by Alisa Samborskaya<br>©RSSchool & ©Yem Digital 2021</div>
@@ -379,6 +379,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
+<script src="./assets/js/email-validation.js"></script>
 <script type="module">
     let splideAbout = new Splide( '.splide', {
         type: 'loop',

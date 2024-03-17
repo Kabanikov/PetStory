@@ -229,7 +229,7 @@ margin-top: 9px;
   line-height: 140%;
   letter-spacing: 0%;
   text-align: left;
-  margin-left: 96px;
+  margin-left: 160px;
 }
 #donate-range {
   -webkit-appearance: none;
@@ -244,7 +244,8 @@ margin-top: 9px;
   width: 100%;
   height: 27px;
   border-radius: 2px;
-
+padding-left: 26px;
+padding-right: 30px;
   background: rgb(64, 73, 80);
 }
 
@@ -275,10 +276,11 @@ input[type="range"] {
 #donate-range::-webkit-slider-thumb::before {
   content: attr(label);
   position: absolute;
-  bottom: -20px; /* регулируйте положение подписи */
-  left: 50%; /* или другая позиция по вашему усмотрению */
+  bottom: -20px; 
+  left: 50%; 
   transform: translateX(-50%);
   white-space: nowrap;
+  text-decoration: line-through;
 } 
 
 .another-amount 
@@ -309,6 +311,44 @@ input[type="range"] {
   margin-top: 17px;
   margin-left: 80px;
 }
+
+.range-discription
+{
+  display: flex;
+  color: rgb(51, 59, 65);
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.first-discription{
+margin-left: 92px;
+}
+.second-discription ,.third-discription ,.fourth-discription{
+margin-left: 58px;
+width: 78px;
+height: 36px;
+}
+.fifth-discription ,.sixth-discription ,.seventh-discription{
+  margin-left: 73px;
+  width: 57px;
+  height: 36px;
+}
+.eighth-discription{
+  width: 71px;
+height: 36px;
+  margin-left: 70px
+}
+.fifth-discription{
+width: 57px;
+height: 36px;
+margin-left: 44px;
+}
+
+
 .feed__button {
   margin: 0 auto;
   margin-top: 30px;
@@ -551,6 +591,78 @@ margin-top: 216px;
   flex-direction: row;
   margin-left: 298px;
   padding-bottom: 50px;
+}
+.pick_and_feed__progress_bar-label{
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+.pick_and_feed__progress_bar-points{
+  display: flex;
+  background: #72828E;
+  height: 2px;
+  width: 810px;
+  border: 12px #404950 solid;
+  border-radius: 3px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.pick_and_feed__progress_bar-point{
+  border: 10px solid transparent;
+  position: relative;
+}
+.pick_and_feed__progress_bar-point-inner{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(255, 238, 46);
+}
+.pick_and_feed__progress_bar-prices{
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+  margin-left: 140px;
+  
+
+}
+.pick_and_feed__progress_bar-price{
+  color: rgb(51, 59, 65);
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 17px;
+  user-select: none;
+  transition: 0.5s;
+}
+.pick_and_feed__progress_bar-price-selected{
+  color: rgb(254, 144, 19);
+}
+.pick_and_feed__progress_bar-point-selected::after{
+  content: "";
+  width: 36px;
+  height: 36px;
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 5px;
+  top: 5px;
+  border-radius: 50%;
+  border: 2px solid rgb(254, 144, 19);
+}
+.pick_and_feed__progress_bar-point-selected::before{
+  content: "";
+  width: 19px;
+  height: 19px;
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 5px;
+  top: 5px;
+  border-radius: 50%;
+  border: 2px solid rgb(254, 144, 19);
 }
 
 
