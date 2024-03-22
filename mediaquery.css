@@ -753,9 +753,6 @@
 
 
 
-
-
-
 @media only screen and (max-width: 640px) {
 
 .man__picture{
@@ -803,5 +800,21 @@ display: none;
   margin-bottom: 80px;
 }
 
+}
 
+@media only screen and (max-width: 1000px) {
+
+  .footer__input-button{
+    width: 80px;
+  }
+  .footer__input-field{
+    width: 170px;
+    height: 42px;
+
+  }
+  .container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
