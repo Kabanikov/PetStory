@@ -65,13 +65,14 @@
                 <div class="amount__container">
                     <div class="roller-title">Amount</div>
                     <div class="pick_and_feed__progress_bar-points">
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(10)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(8)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(4)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(2)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(1)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(0.4)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(0.2)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+
                     </div>
                     <div class="pick_and_feed__progress_bar-prices">
                         <div class="pick_and_feed__progress_bar-price">$2000</div>
@@ -161,7 +162,14 @@
     </footer>
     <script src="./donate.js"></script>
     <script src="../assets/js/email-validation.js"></script>
-
+    <script>
+        function changeDietCount(value) {
+            var dietCountElement = document.querySelector('.diet-count');
+            var currentCount = parseInt(dietCountElement.innerText);
+            var newCount =  value;
+            dietCountElement.innerText = newCount;
+        }
+        </script>
 
 </body>
 
