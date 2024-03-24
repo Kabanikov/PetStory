@@ -56,7 +56,7 @@
                 <div class="subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.</div>
                 <div class="diet__container">
                     <div class="count-container">
-                        <div class="diet-count">4</div>
+                        <div class="diet-count">0</div>
                         <div class="diet-subtitle">Panda diet for the day.</div>
                     </div>
                     <div class="x-icon"></div>
@@ -65,13 +65,14 @@
                 <div class="amount__container">
                     <div class="roller-title">Amount</div>
                     <div class="pick_and_feed__progress_bar-points">
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
-                        <div class="pick_and_feed__progress_bar-point"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(8)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(4)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(2)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(1)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(0.4)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(0.2)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(0.1)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+
                     </div>
                     <div class="pick_and_feed__progress_bar-prices">
                         <div class="pick_and_feed__progress_bar-price">$2000</div>
@@ -83,9 +84,9 @@
                         <div class="pick_and_feed__progress_bar-price">$25</div>
                     </div>
                     <div class="another-amount">
-                        <input id="enter" type="email" value="Another amount">
+                        <input id="enter" type="email" placeholder="Another amount">
                         <div class="money-picture"></div>
-                    </div>
+                      </div>                      
                     <div class="periodicity-selector">
                         <input type="radio" id="donateChoice1" name="contact" value="monthly" />
                         <label for="donateChoice1">Monthly</label>
@@ -143,9 +144,14 @@
                 <div class="form-and-donate">
                     <div class="footer-news-subscribe">
                         <div class="title">Subscribe to our news</div>
-                        <div class="form">
-                            <input type="email" id="emailInput" placeholder="Enter your email" required>
-                            <button type="button" class="submit__button" onclick="validateEmail()">Submit</button>
+                        <div class="footer__subscribe">
+                            <form action="">
+                                <input class="footer__input-field" type="text" id="footer__input-field" name="footer__subscribe" placeholder="Enter your email">
+                                <input type="submit" class="footer__input-button" value="Submit" disabled>
+                            </form>
+                            <div class="footer__input-result">
+    
+                            </div>
                         </div>
                     </div>
                     <div class="designedby">Designed by Alisa Samborskaya<br>©RSSchool & ©Yem Digital 2021</div>
@@ -156,7 +162,32 @@
     </footer>
     <script src="./donate.js"></script>
     <script src="../assets/js/email-validation.js"></script>
+    <script>
+function changeDietCount(value) {
+    var dietCountElement = document.querySelector('.diet-count');
+    var currentCount = parseInt(dietCountElement.innerText);
+    var newCount = value;
+    dietCountElement.innerText = newCount;
+    
+    if (value < 1) {
+        dietCountElement.style.marginLeft = '330px';
+    } else {
+        dietCountElement.style.marginLeft = '360px';
+    }
+}
 
+
+
+
+
+
+
+
+
+
+
+
+</script>
 
 </body>
 
