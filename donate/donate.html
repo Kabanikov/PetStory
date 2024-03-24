@@ -56,7 +56,7 @@
                 <div class="subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.</div>
                 <div class="diet__container">
                     <div class="count-container">
-                        <div class="diet-count">4</div>
+                        <div class="diet-count">0</div>
                         <div class="diet-subtitle">Panda diet for the day.</div>
                     </div>
                     <div class="x-icon"></div>
@@ -65,13 +65,13 @@
                 <div class="amount__container">
                     <div class="roller-title">Amount</div>
                     <div class="pick_and_feed__progress_bar-points">
-                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(10)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
                         <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(8)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
                         <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(4)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
                         <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(2)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
                         <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(1)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
                         <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(0.4)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
                         <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(0.2)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
+                        <div class="pick_and_feed__progress_bar-point" onclick="changeDietCount(0.1)"><div class="pick_and_feed__progress_bar-point-inner"></div></div>
 
                     </div>
                     <div class="pick_and_feed__progress_bar-prices">
@@ -163,12 +163,18 @@
     <script src="./donate.js"></script>
     <script src="../assets/js/email-validation.js"></script>
     <script>
-        function changeDietCount(value) {
-            var dietCountElement = document.querySelector('.diet-count');
-            var currentCount = parseInt(dietCountElement.innerText);
-            var newCount =  value;
-            dietCountElement.innerText = newCount;
-        }
+function changeDietCount(value) {
+    var dietCountElement = document.querySelector('.diet-count');
+    var currentCount = parseInt(dietCountElement.innerText);
+    var newCount = value;
+    dietCountElement.innerText = newCount;
+    
+    if (value < 1) {
+        dietCountElement.style.marginLeft = '330px';
+    } else {
+        dietCountElement.style.marginLeft = '360px';
+    }
+}
         </script>
 
 </body>
