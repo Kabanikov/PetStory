@@ -410,7 +410,9 @@ margin-left: 44px;
   position: relative;
   top: 4px;
 }
-
+.periodicity-selector input:checked {
+  background-color: #FE9013;
+}
 .periodicity-selector label{
 color: rgb(51, 59, 65);
 font-family: Roboto;
