@@ -184,7 +184,7 @@ body {
   display: flex;
 }
 .diet__container .diet-count{
-  width: 160px;
+  width: 80px;
   margin-top: 165px;
   margin-left: 360px;
   color: rgb(0, 0, 0);
@@ -192,7 +192,8 @@ body {
   font-size: 72px;
   font-weight: 700;
   line-height: 80%;
-  
+  align-self: center;
+  transition: margin-left 0.3s ease, transform 0.3s ease; /* Добавим переход для margin-left и transform */
 }
 .diet__container .diet-subtitle{
 color: rgb(51, 59, 65);
@@ -623,6 +624,21 @@ margin-top: 216px;
 }
 .pick_and_feed__progress_bar-price-selected{
   color: rgb(254, 144, 19);
+}
+.pick_and_feed__progress_bar-point-selected {
+  position: relative;
+  animation: grow 0.3s ease forwards;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .pick_and_feed__progress_bar-point-selected::after{
   content: "";
