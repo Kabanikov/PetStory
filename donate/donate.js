@@ -1,3 +1,40 @@
+const amount_field = document.querySelector('#enter');
+const money_picture = document.querySelector('.feed__button');
+const error_message = document.createElement('p'); // Создаем элемент для вывода сообщения об ошибке
+error_message.style.color = 'red'; // Устанавливаем цвет текста сообщения об ошибке
+error_message.style.marginTop = '5px'; // Устанавливаем отступ сверху для сообщения об ошибке
+error_message.style.textAlign = 'center'; // Выравниваем текст по центру
+money_picture.parentNode.insertBefore(error_message, money_picture.nextSibling); // Вставляем сообщение об ошибке после кнопки
+
+amount_field.value = "";
+
+function toggleButtonState(isValid) {
+    if (!isValid) {
+        money_picture.setAttribute('disabled', true); // Делаем кнопку некликабельной, если значение неверное
+        error_message.textContent = "Invalid value"; // Отображаем сообщение об ошибке
+        document.querySelector('.donate__container').style.height = 'calc(100% + 15px)'; // Увеличиваем высоту контейнера на 10 пикселей
+    } else {
+        money_picture.removeAttribute('disabled'); // Делаем кнопку кликабельной, если значение верное
+        error_message.textContent = ""; // Очищаем сообщение об ошибке
+        document.querySelector('.donate__container').style.height = ''; // Сбрасываем установленную высоту контейнера
+    }
+    money_picture.style.cursor = isValid ? 'pointer' : 'not-allowed'; // Устанавливаем стиль курсора
+}
+
+amount_field.addEventListener("input", e => {
+    let input_text = e.target.value;
+    if (input_text.length === 0) {
+        amount_field.style.borderColor = 'rgb(254, 143, 24)';
+        toggleButtonState(false); // Вызываем функцию для управления состоянием кнопки
+        return;
+    }
+    let isValid = /^\d+$/.test(input_text);
+    amount_field.style.borderColor = (isValid ? 'green' : 'red');
+    toggleButtonState(isValid); // Вызываем функцию для управления состоянием кнопки
+});
+
+
+
 let progress_bar_points = document.querySelector('.pick_and_feed__progress_bar-points');
 let progress_bar_prices = document.querySelector('.pick_and_feed__progress_bar-prices');
 let selected_index = -1;
@@ -59,3 +96,5 @@ donate_field.addEventListener("input", e=>{
     donate_button.style.background='';
 
 })
+
+
