@@ -184,7 +184,7 @@ body {
   display: flex;
 }
 .diet__container .diet-count{
-  width: 160px;
+  width: 80px;
   margin-top: 165px;
   margin-left: 360px;
   color: rgb(0, 0, 0);
@@ -192,7 +192,8 @@ body {
   font-size: 72px;
   font-weight: 700;
   line-height: 80%;
-  
+  align-self: center;
+  transition: margin-left 0.3s ease, transform 0.3s ease; /* Добавим переход для margin-left и transform */
 }
 .diet__container .diet-subtitle{
 color: rgb(51, 59, 65);
@@ -303,7 +304,12 @@ input[type="range"] {
   background: transparent;
   color: rgb(146, 150, 153);
   border: none;
+
 }
+.another-amount #enter:focus {
+  outline: none;
+}
+
 .another-amount .money-picture{
   background-image: url(./assets/img/baks.png);
   width: 10px;
@@ -404,7 +410,9 @@ margin-left: 44px;
   position: relative;
   top: 4px;
 }
-
+.periodicity-selector input:checked {
+  background-color: #FE9013;
+}
 .periodicity-selector label{
 color: rgb(51, 59, 65);
 font-family: Roboto;
@@ -420,24 +428,40 @@ text-align: left;
 #donateChoice1{
   margin-left: 28px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer__subscribe-text{
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+.footer__input-field{
+  width: 228px;
+  height: 42px;
+  border-radius: 2px;
+  border: solid 1px rgb(254, 143, 24);
+  background-color: transparent;
+  color: rgb(189, 189, 189);
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0;
+  padding-left: 10px;
+}
+.footer__input-result{
+  margin-top: 10px;
+  display: none;
+}
+.footer__input-button{
+  border: 1px solid rgb(51, 59, 65);
+  border-radius: 5px;
+  background: rgb(241, 243, 242);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0;
+  text-align: center;
+  width: 129px;
+  height: 42px;
+}
 
 .footer {
   background: black;
@@ -476,38 +500,6 @@ line-height: 120%;
 letter-spacing: 0%;
 text-align: left;
 margin-bottom: 14px;
-}
-.footer .container .footer-news-subscribe .form input {
-  width: 228px;
-  height: 42px;
-  background-color: black;
-  border-radius: 2px;
-  border: 0.7px solid var(--orange, #F9804B);
-  color: var(--Gray-4, #BDBDBD);
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  margin-right: 10px;
-}
-
-.footer .container .footer-news-subscribe .form .submit__button {
-  width: 129px;
-  height: 42px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  border: 1px solid var(--Green, #4B9200);
-  background: var(--gray_light, #F1F3F2);
-  display: flex;
-  color: var(--Green, #4B9200);
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer .container .footer-inner .designedby{
@@ -639,6 +631,21 @@ margin-top: 216px;
 }
 .pick_and_feed__progress_bar-price-selected{
   color: rgb(254, 144, 19);
+}
+.pick_and_feed__progress_bar-point-selected {
+  position: relative;
+  animation: grow 0.3s ease forwards;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .pick_and_feed__progress_bar-point-selected::after{
   content: "";

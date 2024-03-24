@@ -753,9 +753,6 @@
 
 
 
-
-
-
 @media only screen and (max-width: 640px) {
 
 .man__picture{
@@ -802,6 +799,50 @@ display: none;
 .samurai__container .howitworks__title .subtitle{
   margin-bottom: 80px;
 }
+.about .splide__slide__row{
+  height: 332px !important;
+}
+.about .splide__slide__row:first-child{
+  margin-bottom: 70px !important;
+}
+.about__card{
+  width: 285px !important;
+  height: 332px;
+  margin-left: 30px;
+}
+.about__card-image{
+  width: 290px;
+  height: 290px;
+}
+.about__cards{
+  position: relative;
+}
+.about__button-cards{
+  position: absolute;
+  transform: translateX(-50%);
+}
+.about__button-cards-prev{
+  left: 45%;
+}
+.about__button-cards-next{
+  left: 55%;
+}
 
+}
 
+@media only screen and (max-width: 1000px) {
+
+  .footer__input-button{
+    width: 80px;
+  }
+  .footer__input-field{
+    width: 170px;
+    height: 42px;
+
+  }
+  .container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
