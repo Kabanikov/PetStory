@@ -885,7 +885,30 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
-
+.feed__button{
+  margin-top: 20px;
+}
+.testimonials{
+flex-direction: column;
+overflow: hidden;
+height: 400px;
+}
+.testimonial{
+  height: 110px;
+}
+.testimonial__text{
+  height: 35px;
+}
+.reviews__flower{
+  display: none;}
+.reviews__feedback{ 
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
 
 .man__picture{
   display: none;
