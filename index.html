@@ -32,6 +32,7 @@
                                 <li class="header__menu-item"><a href="./donate/donate.html" class="header__menu-link">Donate</a></li>
                                 <li class="header__menu-item"><a href="#" class="header__menu-link">Contact us</a></li>
                             </ul>
+                            
                         </nav>
                     </div>
                     <div class="header__top-column header__top-column--right">
@@ -181,6 +182,7 @@
                 <div class="howit__container">
                     <div class="title">How it works</div>
                     <div class="widjets">
+                        <div class="small-arrow"></div>
                         <div class="widjet1">
                             <div class="widjet_background"><div class="widjet__picture"></div></div>
                             <div class="widjet__title">Pay with card</div>
@@ -409,9 +411,9 @@ document.querySelector('.about__button-cards-next').addEventListener('click', ()
 })
 splideAbout.on('resize', ()=>{
     splideAbout.options = {
-        perPage: 1+((window.innerWidth>660)?1:0)+((window.innerWidth>960)?1:0),
+        perPage: 1+((window.innerWidth>640)?1:0)+((window.innerWidth>960)?1:0),
         grid:{
-            rows: 4-((window.innerWidth>660)?2:0),
+            rows: 4-((window.innerWidth>600)?2:0),
         }
     };
 })

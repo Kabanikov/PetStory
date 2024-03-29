@@ -755,11 +755,148 @@
 
 @media only screen and (max-width: 640px) {
 
+  .container .gradient__container .howit__container{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .container .gradient__container .howit__container .title{
+    margin: 0 auto;
+    margin-top: 40px;
+    color: #333B41;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+    }
+    
+    .container .gradient__container .howit__container .widjets{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 44px;
+    }
+    .container .gradient__container .howit__container .widjet_background{
+    width: 168px;
+    height: 168px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid var(--orange, #F9804B);
+    background: #FFF;
+    }
+    
+    .container .gradient__container .howit__container .widjet1 .widjet__picture{
+    width: 168px;
+    height: 168px;
+    flex-shrink: 0;
+    background-image: url(./assets/img/pay.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    } 
+    .container .gradient__container .howit__container .widjet1{
+    width: 168px;
+    height: 244px;
+    }
+    .container .gradient__container .howit__container .widjet1 .widjet__title{
+    margin-top: 30px;
+    color: #333B41;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    }
+    .container .gradient__container .howit__container .widjet2 .widjet__picture{
+    width: 168px;
+    height: 168px;
+    flex-shrink: 0;
+    background-image: url(./assets/img/zoo.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    } 
+    .container .gradient__container .howit__container .widjet2{
+    width: 168px;
+    height: 244px;
+    }
+    .container .gradient__container .howit__container .widjet2 .widjet__title{
+    margin-top: 30px;
+    color: #333B41;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    width: 168px;
+    height: 46px;
+    flex-shrink: 0;
+    
+    }
+    .container .gradient__container .howit__container .widjet3 .widjet__picture{
+    width: 168px;
+    height: 168px;
+    flex-shrink: 0;
+    background-image: url(./assets/img/monkey.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    } 
+    .container .gradient__container .howit__container .widjet3{
+    width: 168px;
+    height: 244px;  
+    }
+    .container .gradient__container .howit__container .widjet3 .widjet__title{
+    margin-top: 30px;
+    color: #333B41;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    width: 168px;
+    height: 244px;
+    flex-shrink: 0;
+    }
+    .container .gradient__container .howit__container .arrow{
+    margin-top: -20px;
+    background-image: url(./assets/img/arrow.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+
+
+
+
 .man__picture{
   display: none;
 }
 
+.about__flower:nth-child(2){
+  background-image: url(./assets/img/flower2.png);
+    display:flex;
+    height: 476px;
+    width: 231px;
+}
+.about__flower:nth-child(1) {
+display: none;
+}
+.about__flower:nth-child(3) {
+  margin-left: -s;
+}
+.container .gradient__container .container__subtitle {
+margin-left: 20px;
+font-size: 22px;}
+.container .gradient__container .covid__title{
+  width: 550px;
+  font-size: 16px;
 
+}
+.container .gradient__container .support-fund_title {
+width: 550px;
+font-size: 15px;
+}
 .header__top-designed
 {
 display: none;
@@ -827,6 +964,7 @@ display: none;
 .about__button-cards-next{
   left: 55%;
 }
+
 
 }
 
