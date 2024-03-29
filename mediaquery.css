@@ -819,6 +819,7 @@
     .container .gradient__container .howit__container .widjet2{
     width: 168px;
     height: 244px;
+    margin-left: 40px;
     }
     .container .gradient__container .howit__container .widjet2 .widjet__title{
     margin-top: 30px;
@@ -844,6 +845,7 @@
     } 
     .container .gradient__container .howit__container .widjet3{
     width: 168px;
+    margin-left: 40px;
     height: 244px;  
     }
     .container .gradient__container .howit__container .widjet3 .widjet__title{
@@ -859,14 +861,30 @@
     flex-shrink: 0;
     }
     .container .gradient__container .howit__container .arrow{
-    margin-top: -20px;
-    background-image: url(./assets/img/arrow.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+  display: none;
     }
-
-
+    .small-arrow1{
+      margin-left: 155px;
+      margin-top: -10px;
+      display: flex;
+      position: absolute;
+      width: 63px;
+      height: 20px;
+      background-image: url(./assets/img/arrow.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .small-arrow2{
+      margin-left: 365px;
+      margin-top: -10px;
+      display: flex;
+      position: absolute;
+      width: 63px;
+      height: 20px;
+      background-image: url(./assets/img/arrow.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
 
 
 .man__picture{
