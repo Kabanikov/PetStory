@@ -909,7 +909,12 @@ height: 400px;
   margin-top: 40px;
   margin-bottom: 80px;
 }
-
+.footer-news-subscribe{
+  display: none;
+}
+.footer .container .footer-inner .donate__button{
+  margin-top: 32px;
+}
 .man__picture{
   display: none;
 }
@@ -919,6 +924,22 @@ height: 400px;
     display:flex;
     height: 476px;
     width: 231px;
+}
+.social-network_container .title{
+  display: none;
+}
+.social-network_container{
+  width: 30px;
+  position: absolute;
+  right: 0;
+}
+.footer .container .footer-inner .social-network_container
+{
+  margin-top: -160px;
+
+}
+.footer .header__menu{
+  display: none;
 }
 .about__flower:nth-child(1) {
 display: none;
