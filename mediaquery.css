@@ -755,11 +755,210 @@
 
 @media only screen and (max-width: 640px) {
 
+  .container .gradient__container .howit__container{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .container .gradient__container .howit__container .title{
+    margin: 0 auto;
+    margin-top: 40px;
+    color: #333B41;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+    }
+    
+    .container .gradient__container .howit__container .widjets{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 44px;
+    }
+    .container .gradient__container .howit__container .widjet_background{
+    width: 168px;
+    height: 168px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid var(--orange, #F9804B);
+    background: #FFF;
+    }
+    
+    .container .gradient__container .howit__container .widjet1 .widjet__picture{
+    width: 168px;
+    height: 168px;
+    flex-shrink: 0;
+    background-image: url(./assets/img/pay.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    } 
+    .container .gradient__container .howit__container .widjet1{
+    width: 168px;
+    height: 244px;
+    }
+    .container .gradient__container .howit__container .widjet1 .widjet__title{
+    margin-top: 30px;
+    color: #333B41;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    }
+    .container .gradient__container .howit__container .widjet2 .widjet__picture{
+    width: 168px;
+    height: 168px;
+    flex-shrink: 0;
+    background-image: url(./assets/img/zoo.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    } 
+    .container .gradient__container .howit__container .widjet2{
+    width: 168px;
+    height: 244px;
+    margin-left: 40px;
+    }
+    .container .gradient__container .howit__container .widjet2 .widjet__title{
+    margin-top: 30px;
+    color: #333B41;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    width: 168px;
+    height: 46px;
+    flex-shrink: 0;
+    
+    }
+    .container .gradient__container .howit__container .widjet3 .widjet__picture{
+    width: 168px;
+    height: 168px;
+    flex-shrink: 0;
+    background-image: url(./assets/img/monkey.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    } 
+    .container .gradient__container .howit__container .widjet3{
+    width: 168px;
+    margin-left: 40px;
+    height: 244px;  
+    }
+    .container .gradient__container .howit__container .widjet3 .widjet__title{
+    margin-top: 30px;
+    color: #333B41;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    width: 168px;
+    height: 244px;
+    flex-shrink: 0;
+    }
+    .container .gradient__container .howit__container .arrow{
+  display: none;
+    }
+    .small-arrow1{
+      margin-left: 155px;
+      margin-top: -10px;
+      display: flex;
+      position: absolute;
+      width: 63px;
+      height: 20px;
+      background-image: url(./assets/img/arrow.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .small-arrow2{
+      margin-left: 365px;
+      margin-top: -10px;
+      display: flex;
+      position: absolute;
+      width: 63px;
+      height: 20px;
+      background-image: url(./assets/img/arrow.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+.feed__button{
+  margin-top: 20px;
+}
+.testimonials{
+flex-direction: column;
+overflow: hidden;
+height: 400px;
+}
+.testimonial{
+  height: 110px;
+}
+.testimonial__text{
+  height: 35px;
+}
+.reviews__flower{
+  display: none;}
+.reviews__feedback{ 
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.footer-news-subscribe{
+  display: none;
+}
+.footer .container .footer-inner .donate__button{
+  margin-top: 32px;
+}
 .man__picture{
   display: none;
 }
 
+.about__flower:nth-child(2){
+  background-image: url(./assets/img/flower2.png);
+    display:flex;
+    height: 476px;
+    width: 231px;
+}
+.social-network_container .title{
+  display: none;
+}
+.social-network_container{
+  width: 30px;
+  position: absolute;
+  right: 0;
+}
+.footer .container .footer-inner .social-network_container
+{
+  margin-top: -160px;
 
+}
+.footer .header__menu{
+  display: none;
+}
+.about__flower:nth-child(1) {
+display: none;
+}
+.about__flower:nth-child(3) {
+  margin-left: -s;
+}
+.container .gradient__container .container__subtitle {
+margin-left: 20px;
+font-size: 22px;}
+.container .gradient__container .covid__title{
+  width: 550px;
+  font-size: 16px;
+
+}
+.container .gradient__container .support-fund_title {
+width: 550px;
+font-size: 15px;
+}
 .header__top-designed
 {
 display: none;
@@ -827,6 +1026,7 @@ display: none;
 .about__button-cards-next{
   left: 55%;
 }
+
 
 }
 
