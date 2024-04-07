@@ -14,6 +14,10 @@ body {
   z-index: 999;
 }
 
+
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 h2 {
 vertical-align: center;
@@ -972,4 +976,45 @@ bottom: -30px;
 transform: rotate(-10deg);
 position: absolute;
 background-size: cover;
+}
+
+li{
+  list-style: none;
+}
+.navbar{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+.nav-menu{
+  display: flex;
+  align-items: center;
+}
+.nav-branding{
+  font-size: 2rem;
+}
+/* transition for links */
+.nav-link{
+  transition: 0.5s ease;
+}
+.nav-link:hover{
+  color: dodgerblue;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: white;
+}
+.nav-item{
+  padding: 0 1.5rem;
 }

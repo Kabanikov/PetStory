@@ -21,19 +21,28 @@
             <div class="container">
                 <div class="header__top-inner">
                     <div class="header__top-column header__top-column--left">
-                        <a href="#" class="header__top-logo logo">
-                            <img src="./assets/img/logo.PNG" alt="logo">
-                        </a>
-                        <nav class="header__menu">
-                            <ul class="header__menu-list">
-                                <li class="header__menu-item active"><a href="#" class="header__menu-link">About</a></li>
-                                <li class="header__menu-item"><a href="#" class="header__menu-link">Map</a></li>
-                                <li class="header__menu-item"><a href="#" class="header__menu-link">Zoos</a></li>
-                                <li class="header__menu-item"><a href="./donate/donate.html" class="header__menu-link">Donate</a></li>
-                                <li class="header__menu-item"><a href="#" class="header__menu-link">Contact us</a></li>
+                        <nav class="navbar">
+                            <a href="#" class="logo">Logo</a>
+                            <ul class="nav-menu">
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">Work</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">Contact</a>
+                              </li>
                             </ul>
-                            
-                        </nav>
+                            <div class="hamburger">
+                              <span class="bar"></span>
+                              <span class="bar"></span>
+                              <span class="bar"></span>
+                            </div>
+                          </nav>
                     </div>
                     <div class="header__top-column header__top-column--right">
                         <span class="header__top-designed">Designed by ©</span>
@@ -418,5 +427,15 @@ splideAbout.on('resize', ()=>{
         }
     };
 })
+const hamburger = document.querySelector(".hamburger")
+const nav_menu = document.querySelector(".nav-menu")
+hamburger.addEventListener("click",()=>{
+  hamburger.classList.toggle("active");
+  nav_menu.classList.toggle("active");
+})
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  nav_menu.classList.remove("active");
+}))
 </script>
 </html>
