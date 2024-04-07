@@ -1028,6 +1028,42 @@ display: none;
 }
 
 
+@media(max-width: 800px){
+  .bar{
+    display: block;
+  }
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: rotate(45deg) translateY(11.5px); 
+  }  
+  .hamburger.active .bar:nth-child(3){
+    transform: rotate(-45deg) translateY(-11.5px); 
+  }
+  .nav-menu{
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: black;
+    transition: 0.3s;
+  }
+  .nav-item{
+    padding: 1.5rem 0;
+  }
+  
+  .nav-menu.active{
+    right: 0;
+  }
+  
+}
+
 }
 
 @media only screen and (max-width: 1000px) {
