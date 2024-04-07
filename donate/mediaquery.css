@@ -2,6 +2,10 @@
     body {
         font-family: "Roboto", sans-serif;
       }
+      .header__top-designed
+{
+display: none;
+}
       .container {
         max-width: 1000px;
         margin: 0 auto;
@@ -46,6 +50,56 @@
       .header__menu-item.active .header__menu-link {
         color: #fe9013;
       }
+      @media only screen and (max-width: 1000px) {
 
+        .footer__input-button{
+          width: 80px;
+        }
+        .footer__input-field{
+          width: 170px;
+          height: 42px;
+      
+        }
+        .container {
+          max-width: 950px;
+          margin: 0 auto;
+          padding: 0 15px;
+        }
+      }
+      @media(max-width: 800px){
+        .bar{
+          display: block;
+        }
+        .hamburger{
+          display: block;
+        }
+        .hamburger.active .bar:nth-child(2){
+          opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1){
+          transform: rotate(45deg) translateY(11.5px); 
+        }  
+        .hamburger.active .bar:nth-child(3){
+          transform: rotate(-45deg) translateY(-11.5px); 
+        }
+        .nav-menu{
+          position: fixed;
+          right: -100%;
+          top: 70px;
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+          background: black;
+          transition: 0.3s;
+        }
+        .nav-item{
+          padding: 1.5rem 0;
+        }
+        
+        .nav-menu.active{
+          right: 0;
+        }
+        
+      }
 
 }
