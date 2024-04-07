@@ -1064,21 +1064,67 @@ display: none;
   
 }
 
+@media only screen and (max-width: 320px) {
+  body {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .container {
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 0 5px;
+    }
+    .navbar
+    {
+      height: 54px;
+
+      padding: 0;
+      margin-top: -20px;
+
+    }
+    .hamburger{
+      margin-top: -10px;    }
+    .navbar .logo{
+      width: 46px;
+      height: 29px;
+    }
+    .header__top
+    {
+      height: 54px;
+    }
+    .header__bottom-inner
+    {
+      height: 186px;
+    }
+    .nav-item{
+      height: 20px;
+    }
+    .header__top-inner{
+      height: 54px;
+    }
+    .nav-menu.active{
+      margin-top: -20px;
+    }
+    .header__inner-content {
+
+    }
+    .header__bottom .header__inner-text {
+      width: 120px;
+      height: 179px;
+      line-height: 15px;
+    }
+    .header__inner-text span {
+      font-size: 18px;
+    }
+    .header__inner-text p {
+      font-size: 18px;
+      margin-top: -47px;
+      margin-left: -47px;
+    }
+    .header__button {
+      margin-left: 102px;
+    }
 }
 
-@media only screen and (max-width: 1000px) {
-
-  .footer__input-button{
-    width: 80px;
-  }
-  .footer__input-field{
-    width: 170px;
-    height: 42px;
-
-  }
-  .container {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
 }
+
