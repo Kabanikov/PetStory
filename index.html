@@ -21,18 +21,31 @@
             <div class="container">
                 <div class="header__top-inner">
                     <div class="header__top-column header__top-column--left">
-                        <a href="#" class="header__top-logo logo">
-                            <img src="./assets/img/logo.PNG" alt="logo">
-                        </a>
-                        <nav class="header__menu">
-                            <ul class="header__menu-list">
-                                <li class="header__menu-item active"><a href="#" class="header__menu-link">About</a></li>
-                                <li class="header__menu-item"><a href="#" class="header__menu-link">Map</a></li>
-                                <li class="header__menu-item"><a href="#" class="header__menu-link">Zoos</a></li>
-                                <li class="header__menu-item"><a href="./donate/donate.html" class="header__menu-link">Donate</a></li>
-                                <li class="header__menu-item"><a href="#" class="header__menu-link">Contact us</a></li>
+                        <nav class="navbar">
+                            <a href="./index.html" class="logo"></a>
+                            <ul class="nav-menu">
+                              <li class="nav-item">
+                                <a href="./index.html" class="nav-link_active">About</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">Map</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">Zoos</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="./donate/donate.html" class="nav-link">Donate</a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="#" class="nav-link">Contact us</a>
+                              </li>
                             </ul>
-                        </nav>
+                            <div class="hamburger">
+                              <span class="bar"></span>
+                              <span class="bar"></span>
+                              <span class="bar"></span>
+                            </div>
+                          </nav>
                     </div>
                     <div class="header__top-column header__top-column--right">
                         <span class="header__top-designed">Designed by ©</span>
@@ -134,23 +147,23 @@
                             </div>
                         </div>
                         <div style=" width: 366px" class="about__card splide__slide">
-                            <img src="./assets/img/kostya-furry.jpg" alt="Kostya Furry" class="about__card-image">
+                            <img src="./assets/img/kostya-furry.png" alt="Lemur" class="about__card-image">
                             <div class="about__card-info">
                                 <div class="about__card-text">
-                                    <div class="about__card-title">Kostya Furry</div>
-                                    <div class="about__card-subtitle">Native to Belarus</div>
+                                    <div class="about__card-title">Lemur</div>
+                                    <div class="about__card-subtitle">Native to Africa</div>
                                 </div>
-                                <div class="about__card-glyph"><img src="./assets/img/cocaine.svg" alt="cocaine"></div>
+                                <div class="about__card-glyph"><img src="./assets/img/banana-bamboo_icon.svg" alt="cocaine"></div>
                             </div>
                         </div>
                         <div style=" width: 366px" class="about__card splide__slide">
-                            <img src="./assets/img/kostya-with-furries.jpg" alt="Kostya With Furries" class="about__card-image">
+                            <img src="./assets/img/kostya-with-furries.png" alt="Bison" class="about__card-image">
                             <div class="about__card-info">
                                 <div class="about__card-text">
-                                    <div class="about__card-title">Kostya With Furries</div>
+                                    <div class="about__card-title">Bison</div>
                                     <div class="about__card-subtitle">Native to Belarus</div>
                                 </div>
-                                <div class="about__card-glyph"><img src="./assets/img/cocaine.svg" alt="cocaine"></div>
+                                <div class="about__card-glyph"><img src="./assets/img/banana-bamboo_icon.svg" alt="cocaine"></div>
                             </div>
                         </div>
                     </div>
@@ -181,6 +194,8 @@
                 <div class="howit__container">
                     <div class="title">How it works</div>
                     <div class="widjets">
+                        <div class="small-arrow1"></div>
+                        <div class="small-arrow2"></div>
                         <div class="widjet1">
                             <div class="widjet_background"><div class="widjet__picture"></div></div>
                             <div class="widjet__title">Pay with card</div>
@@ -409,11 +424,21 @@ document.querySelector('.about__button-cards-next').addEventListener('click', ()
 })
 splideAbout.on('resize', ()=>{
     splideAbout.options = {
-        perPage: 1+((window.innerWidth>660)?1:0)+((window.innerWidth>960)?1:0),
+        perPage: 1+((window.innerWidth>640)?1:0)+((window.innerWidth>960)?1:0),
         grid:{
-            rows: 4-((window.innerWidth>660)?2:0),
+            rows: 4-((window.innerWidth>600)?2:0),
         }
     };
 })
+const hamburger = document.querySelector(".hamburger")
+const nav_menu = document.querySelector(".nav-menu")
+hamburger.addEventListener("click",()=>{
+  hamburger.classList.toggle("active");
+  nav_menu.classList.toggle("active");
+})
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  nav_menu.classList.remove("active");
+}))
 </script>
 </html>
