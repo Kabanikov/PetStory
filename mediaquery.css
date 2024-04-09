@@ -1161,6 +1161,9 @@ display: none;
     font-size: 24px;
     margin-top: 20px;
   }
+  .about .splide__slide__row:first-child {
+    margin-bottom: 15px !important;}
+
   .samurai__container .howitworks__title .subtitle{
     font-size: 16px;
     margin-top: 10px;
