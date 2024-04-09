@@ -123,15 +123,31 @@ donate_field.addEventListener("input", e=>{
 
 function changeDietCount(value) {
     var dietCountElement = document.querySelector('.diet-count');
-    var currentCount = parseInt(dietCountElement.innerText);
     var newCount = value;
     dietCountElement.innerText = newCount;
-    
-    if (value < 1) {
-        dietCountElement.style.marginLeft = '330px';
+
+    if (window.innerWidth <= 400) {
+        if (value < 1) {
+            dietCountElement.style.marginLeft = '10px';
+        } else {
+            dietCountElement.style.marginLeft = '20px';
+        }
+    } else if (window.innerWidth <= 700) {
+        if (value < 1) {
+            dietCountElement.style.marginLeft = '50px';
+        } else {
+            dietCountElement.style.marginLeft = '85px';
+        }
     } else {
-        dietCountElement.style.marginLeft = '360px';
+        if (value < 1) {
+            dietCountElement.style.marginLeft = '330px';
+        } else {
+            dietCountElement.style.marginLeft = '360px';
+        }
     }
 }
+
+
+
 
 

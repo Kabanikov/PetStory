@@ -858,6 +858,8 @@ display: none;
       font-size: 24px;
       width: 600px;
     }
+
+
     .count-container .diet-count{
       margin-left: 86px;
     }
@@ -986,6 +988,20 @@ display: none;
         font-size: 9px;
   
       }
+          .pick_and_feed__progress_bar-point-selected::after{
+      content: "";
+      width: 18px;
+      height: 18px;
+      top: 3px;
+      left: 3px;
+    }
+    .pick_and_feed__progress_bar-point-selected::before{
+      content: "";
+      width: 35px;
+      height: 35px;
+      top: 3px;
+      left: 3px;
+    }
       .diet__container .panda-img{
         width: 160.15px;
         height: 138.72px;
