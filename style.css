@@ -749,7 +749,6 @@ margin-bottom: 180px;
 display: flex;
 }
 img {
-max-width: 609px;
 max-height: 403px;
 object-fit: contain;
 }
@@ -995,6 +994,7 @@ li{
 .body-scroll-lock {
   overflow: hidden;
 }
+
 .navbar{
   height: 70px;
   width: 700px;
