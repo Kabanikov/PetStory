@@ -727,10 +727,7 @@
       height: 354px;
       margin-left: 10px;
   }
-  .about__card-image{
-      width: 290px;
-      height: 290px;
-  }
+
   .about__cards{
       position: relative;
   }
@@ -1010,8 +1007,11 @@ display: none;
   margin-left: 30px;
 }
 .about__card-image{
-  width: 290px;
-  height: 290px;
+  width: 282px;
+  height: 282px;
+}
+.about__button-cards-next{
+  margin-left: 30px;
 }
 .about__cards{
   position: relative;
@@ -1064,7 +1064,7 @@ display: none;
   
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   body {
       font-family: "Roboto", sans-serif;
     }
@@ -1087,6 +1087,9 @@ display: none;
     .navbar .logo{
       width: 46px;
       height: 29px;
+      background-image: url(./assets/img/logo_footer.png);
+      background-size: contain;
+      margin-top: -5px;
     }
     .header__top
     {
@@ -1109,21 +1112,224 @@ display: none;
 
     }
     .header__bottom .header__inner-text {
+      margin-top: 20px;
       width: 120px;
-      height: 179px;
-      line-height: 15px;
+      height: 120px;
+      line-height: normal;
+      font-size: 28px;
+      margin-left: 252px;
+      position: absolute;
     }
     .header__inner-text span {
-      font-size: 18px;
+      font-size: 20px;
+      font-style: bold;
     }
     .header__inner-text p {
-      font-size: 18px;
-      margin-top: -47px;
-      margin-left: -47px;
+      font-size: 20px;
+      margin-top: -60px;
+      margin-left: -50px;
+
     }
     .header__button {
       margin-left: 102px;
     }
+    .header__button{
+      visibility: hidden;
+    }
+    .text__container .header__button{
+      visibility: visible;
+      position: absolute;
+      width: 298px;
+      height: 54px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .about__flower:nth-child(2){
+      width: 105px;
+      height: 217px;
+      margin-top: 165px;
+      right: -90px;    
+      }
+    .samurai__container .backstage__title{
+      font-size: 24px;
+      margin-top: 100px;
+      width: 300px;
+      margin-left: 5px;
+  }
+  .samurai__container .backstage__title .subtitle{
+    font-size: 16px;
+    margin-top: 10px;
+    width: 300px;
+  }
+  .samurai__container .howitworks__title{
+    margin-left: 5px;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .samurai__container .howitworks__title .subtitle{
+    font-size: 16px;
+    margin-top: 10px;
+    width: 290px;
+    height: 200px;
+
+  }
+  .about__card{
+    width: 285px;
+    height: 332px;
+    padding-right: 1000px !important;
+    
+  }
+  .about__card-image{
+    width: 285px;
+    height: 285px;
+  }
+
+
+
+
+
+  .about__flower:nth-child(3){
+    width: 138px;
+height: 72px;
+left: -80px;
+right: 262px;
+  }
+  .gradient{
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .gradient__container{
+    width: 300px;
+    margin: 0 auto;
+    margin-left: -5px;
+  }
+  .container .gradient__container .container__title{
+    font-size: 24px;
+    margin-top: 20px;
+    height: 29px;
+  }
+  .container .gradient__container .container__subtitle{
+    font-size: 18px;
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .container .gradient__container .howit__container{
+    display: flex;
+    flex-direction: column;
+    }
+    .covid__title, .support-fund_title{
+      display: none;
+    }
+
+  
+    
+    .container .gradient__container .howit__container .title{
+      font-size: 24px;
+      margin-top: 20px;
+    }
+    
+    .container .gradient__container .howit__container .widjets{
+      flex-direction: column;
+    }
+    .container .gradient__container .howit__container .widjet1{
+      margin: 0 auto;
+    }
+    .container .gradient__container .howit__container .widjet1 .widjet__title{
+      margin-top: 10px;
+      font-size: 16px;
+
+    }
+    .container .gradient__container .howit__container .widjet2{
+      margin: 0 auto;
+      margin-top: -20px;
+    }
+    .container .gradient__container .howit__container .widjet2 .widjet__title{
+      margin-top: 10px;
+      font-size: 16px;
+    
+    }
+    .container .gradient__container .howit__container .widjet3{
+      margin: 0 auto;
+    }
+    .container .gradient__container .howit__container .widjet3 .widjet__title{
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .container .gradient__container .howit__container .arrow{
+  display: none;
+    }
+    .small-arrow1{
+      width: 63px;
+      height: 69px;
+      margin-left: 130px;
+      margin-top: 160px;
+      transform: rotate(90deg);
+
+    }
+    .small-arrow2{
+      width: 63px;
+      height: 69px;
+      margin-left: 130px;
+      margin-top: 390px;
+      transform: rotate(90deg);
+    }
+    .reviews__title{
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .reviews__flower{
+    display: none;
+    }
+    .logo-container .logo
+    {
+      display: none;
+    }
+    .logosmall{
+      display: flex;
+      margin: 0 auto;
+      margin-left: 90px;
+    }
+    .footer .container .footer-inner .social-network_container{
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      margin: 0 auto;
+      margin-left: 50px;
+      margin-top: 10px;
+      right: auto;
+    } 
+    .form-and-donate{
+      display: none;
+    }
+    .footer .container .footer-inner .donate__button {
+      position: absolute;
+      margin: 0 auto;
+      margin-top: 76px;
+      width: 298px;
+height: 54px;
+    }
+    .facebook__button, .twitter__button,.instagram__button{
+    padding-right: 30px;
+    }
+    .footer .container .footer-inner .designedby{
+      width: 200px;
+      position: absolute;
+    }
+    .footer{
+      height: 340px;
+    }
+    .about__button-cards-next, .about__button-cards-prev{
+      display: none;
+    }
+    .about__card-title{
+      width: 210px;
+      height: 17px;
+      font-size: 16px;
+    }
+
 }
 
 }

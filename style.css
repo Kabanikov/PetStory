@@ -13,6 +13,17 @@ body {
   color: #fff;
   z-index: 999;
 }
+.text__container .header__button{
+  visibility: hidden;
+}
+.logosmall{
+  display: none;
+}
+
+
+
+
+
 
 
 
@@ -980,6 +991,9 @@ background-size: cover;
 
 li{
   list-style: none;
+}
+.body-scroll-lock {
+  overflow: hidden;
 }
 .navbar{
   height: 70px;
