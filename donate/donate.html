@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="./donate.css">
-    <link rel="stylesheet" href="./mediaquery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -125,29 +124,28 @@
                     <a href="#" class="logo">
                         <img src="../assets/img/logo.PNG" alt="logo">
                     </a>
+                    <a href="#" class="logosmall">
+                        <img src="../assets/img/phone-footer-logo.png" alt="logo">
+                    </a>
                     <a href="#" class="donate__button">
                         Donate for volunteers
                     </a>
                     <div class="social-network_container">
                         <div class="facebook__button">
                             <div class="icon"><div class="title">Facebook</div></div>
-                            
                         </div>
                         <div class="twitter__button">
                             <div class="icon"><div class="title">Twitter</div></div>
-                            
                         </div>
                         <div class="instagram__button">
                             <div class="icon"><div class="title">Instagram</div></div>
-                            
                         </div>
                         <div class="youtube__button">
                             <div class="icon" ><div class="title">YouTube</div></div>
-
                         </div>
                         <nav class="header__menu">
                             <ul class="header__menu-list">
-                                <li class="header__menu-item"><a href="#" class="header__menu-link">About</a></li>
+                                <li class="header__menu-item active"><a href="#" class="header__menu-link">About</a></li>
                                 <li class="header__menu-item"><a href="#" class="header__menu-link">Map</a></li>
                                 <li class="header__menu-item"><a href="#" class="header__menu-link">Zoos</a></li>
                                 <li class="header__menu-item"><a href="#" class="header__menu-link">Contact us</a></li>
@@ -164,60 +162,15 @@
                                 <input type="submit" class="footer__input-button" value="Submit" disabled>
                             </form>
                             <div class="footer__input-result">
-    
                             </div>
                         </div>
                     </div>
                     <div class="designedby">Designed by Alisa Samborskaya<br>©RSSchool & ©Yem Digital 2021</div>
                 </div>
-
             </div>
         </div>
-    </footer>
+    </footer> 
     <script src="./donate.js"></script>
-    <script src="../assets/js/email-validation.js">
-        
-    </script>
-    <script>
-function changeDietCount(value) {
-    var dietCountElement = document.querySelector('.diet-count');
-    var currentCount = parseInt(dietCountElement.innerText);
-    var newCount = value;
-    dietCountElement.innerText = newCount;
-    
-    if (value < 1) {
-        dietCountElement.style.marginLeft = '330px';
-    } else {
-        dietCountElement.style.marginLeft = '360px';
-    }
-}
-</script>
-<script>
-const hamburger = document.querySelector(".hamburger")
-const nav_menu = document.querySelector(".nav-menu")
-hamburger.addEventListener("click",()=>{
-  hamburger.classList.toggle("active");
-  nav_menu.classList.toggle("active");
-})
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  nav_menu.classList.remove("active");
-}))
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-</script>
-
+    <script src="../assets/js/email-validation.js"></script>
 </body>
-
 </html>
