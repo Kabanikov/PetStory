@@ -9,10 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-   
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaquery.css">
-
     <title>Online zoo</title>
 </head>
 <body>
@@ -75,6 +73,9 @@
                 <div class="samurai__container">
                     <div class="man__picture"></div>
                     <div class="text__container">
+                        <a href="#" class="header__button">
+                            watсh online
+                        </a>
                         <div class="backstage__title">The Backstage of the Wilderness World.<div class="subtitle">The site was founded on the basis of a volunteer movement to protect and care for animals.</div></div>
                         <div class="howitworks__title">How it works<div class="subtitle">The main goal is to help the animals, as well as the nature reserves and zoos where they are kept. We are currently working on video projects targeting pandas in China, eagles on an island near Los Angeles, alligators in Florida and gorillas in the Congo. These have a total of more than 1,500 mammals and reptiles.</div></div> 
                     </div>
@@ -315,7 +316,7 @@
                     <div class="testimonial__image"><img src="./assets/img/kostya-with-furries-pfp.jpg" alt="User image"></div>
                     <div class="testimonial__info">
                         <div class="testimonial__name">
-                            Kostya with furries
+                            Konstantin
                         </div>
                         <div class="testimonial__date-and-location">
                             Belarus • Yesterday
@@ -344,25 +345,24 @@
                     <a href="#" class="logo">
                         <img src="./assets/img/logo.PNG" alt="logo">
                     </a>
+                    <a href="#" class="logosmall">
+                        <img src="./assets/img/phone-footer-logo.png" alt="logo">
+                    </a>
                     <a href="#" class="donate__button">
                         Donate for volunteers
                     </a>
                     <div class="social-network_container">
                         <div class="facebook__button">
                             <div class="icon"><div class="title">Facebook</div></div>
-                            
                         </div>
                         <div class="twitter__button">
                             <div class="icon"><div class="title">Twitter</div></div>
-                            
                         </div>
                         <div class="instagram__button">
                             <div class="icon"><div class="title">Instagram</div></div>
-                            
                         </div>
                         <div class="youtube__button">
                             <div class="icon" ><div class="title">YouTube</div></div>
-
                         </div>
                         <nav class="header__menu">
                             <ul class="header__menu-list">
@@ -383,62 +383,17 @@
                                 <input type="submit" class="footer__input-button" value="Submit" disabled>
                             </form>
                             <div class="footer__input-result">
-    
                             </div>
                         </div>
                     </div>
                     <div class="designedby">Designed by Alisa Samborskaya<br>©RSSchool & ©Yem Digital 2021</div>
                 </div>
-
             </div>
         </div>
-    </footer>
-    
-    
+    </footer> 
 </body>
-
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
 <script src="./assets/js/email-validation.js"></script>
-<script type="module">
-let splideAbout = new Splide( '.splide', {
-    type: 'loop',
-    perMove: 1,
-    perPage: 2+((window.innerWidth>320)?1:0),
-    pagination: false,
-    arrows: false,
-    grid: {
-        rows: 2,
-        cols: 1,
-        gap : {
-            row: '1rem',
-            col: '1.5rem',
-        },
-    },
-} ).mount(window.splide.Extensions);
-document.querySelector('.about__button-cards-prev').addEventListener('click', ()=>{
-    splideAbout.go('-1');
-})
-document.querySelector('.about__button-cards-next').addEventListener('click', ()=>{
-    splideAbout.go('+1');
-})
-splideAbout.on('resize', ()=>{
-    splideAbout.options = {
-        perPage: 1+((window.innerWidth>640)?1:0)+((window.innerWidth>960)?1:0),
-        grid:{
-            rows: 4-((window.innerWidth>600)?2:0),
-        }
-    };
-})
-const hamburger = document.querySelector(".hamburger")
-const nav_menu = document.querySelector(".nav-menu")
-hamburger.addEventListener("click",()=>{
-  hamburger.classList.toggle("active");
-  nav_menu.classList.toggle("active");
-})
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  nav_menu.classList.remove("active");
-}))
-</script>
+<script src="./assets/js/index.js"></script>
 </html>

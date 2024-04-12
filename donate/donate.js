@@ -1,3 +1,25 @@
+const hamburger = document.querySelector(".hamburger");
+const nav_menu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  nav_menu.classList.toggle("active");
+
+  if (hamburger.classList.contains("active")) {
+    document.body.classList.add("body-scroll-lock");
+  } else {
+    document.body.classList.remove("body-scroll-lock");
+  }
+});
+
+document.querySelectorAll(".nav-link").forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    nav_menu.classList.remove("active");
+    document.body.classList.remove("body-scroll-lock");
+  })
+);
+
 const amount_field = document.querySelector('#enter');
 const money_picture = document.querySelector('.feed__button');
 const error_message = document.createElement('p'); // Создаем элемент для вывода сообщения об ошибке
@@ -96,5 +118,36 @@ donate_field.addEventListener("input", e=>{
     donate_button.style.background='';
 
 })
+
+
+
+function changeDietCount(value) {
+    var dietCountElement = document.querySelector('.diet-count');
+    var newCount = value;
+    dietCountElement.innerText = newCount;
+
+    if (window.innerWidth <= 400) {
+        if (value < 1) {
+            dietCountElement.style.marginLeft = '10px';
+        } else {
+            dietCountElement.style.marginLeft = '20px';
+        }
+    } else if (window.innerWidth <= 700) {
+        if (value < 1) {
+            dietCountElement.style.marginLeft = '50px';
+        } else {
+            dietCountElement.style.marginLeft = '85px';
+        }
+    } else {
+        if (value < 1) {
+            dietCountElement.style.marginLeft = '330px';
+        } else {
+            dietCountElement.style.marginLeft = '360px';
+        }
+    }
+}
+
+
+
 
 
