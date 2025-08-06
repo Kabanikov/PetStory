@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/strikeflowhk/static/css/main.8d65fca3.css",
+    "main.js": "/strikeflowhk/static/js/main.11325640.js",
+    "static/js/453.4151215b.chunk.js": "/strikeflowhk/static/js/453.4151215b.chunk.js",
+    "index.html": "/strikeflowhk/index.html",
+    "main.8d65fca3.css.map": "/strikeflowhk/static/css/main.8d65fca3.css.map",
+    "main.11325640.js.map": "/strikeflowhk/static/js/main.11325640.js.map",
+    "453.4151215b.chunk.js.map": "/strikeflowhk/static/js/453.4151215b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d65fca3.css",
+    "static/js/main.11325640.js"
+  ]
+}
